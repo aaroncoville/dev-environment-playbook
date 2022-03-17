@@ -1,3 +1,188 @@
-- community.general.homebrew:
+# GNU programs that don't exist in MacOS:
+- name: Install watch
+  community.general.homebrew:
+    name: watch
+    state: present
+- name: Install wget
+  community.general.homebrew:
+    name: wget
+    state: present
+- name: Install wdiff
+  community.general.homebrew:
+    name: wdiff
+    state: present
+- name: Install autoconf
+  community.general.homebrew:
+    name: autoconf
+    state: present
+# GNU programs with a BSD version included with macOS
+- name: Install coreutils
+  community.general.homebrew:
+    name: coreutils
+    state: present
+- name: Install binutils
+  community.general.homebrew:
+    name: binutils
+    state: present
+- name: Install diffutils
+  community.general.homebrew:
+    name: diffutils
+    state: present
+- name: Install ed
+  community.general.homebrew:
+    name: ed
+    state: present
+- name: Install findutils
+  community.general.homebrew:
+    name: findutils
+    state: present
+- name: Install gawk 
+  community.general.homebrew:
+    name: gawk
+    state: present
+- name: Install gnu-indent 
+  community.general.homebrew:
+    name: gnu-indent
+    state: present
+- name: Install gnu-sed 
+  community.general.homebrew:
+    name: gnu-sed
+    state: present
+- name: Install gnu-tar 
+  community.general.homebrew:
+    name: gnu-tar
+    state: present
+- name: Install gnu-which 
+  community.general.homebrew:
+    name: gnu-which
+    state: present
+- name: Install grep 
+  community.general.homebrew:
+    name: grep
+    state: present
+- name: Install gzip 
+  community.general.homebrew:
+    name: gzip 
+    state: present
+- name: Install screen 
+  community.general.homebrew:
+    name: screen 
+    state: present
+
+# GNU programs that come bundled with macOS but are outdated:
+- name: Install bash
+  community.general.homebrew:
+    name: bash
+    state: present
+- name: Install emacs
+  community.general.homebrew:
+    name: emacs
+    state: present
+- name: Install gpatch
+  community.general.homebrew:
+    name: gpatch
+    state: present
+- name: Install less
+  community.general.homebrew:
+    name: less
+    state: present
+- name: Install m4
+  community.general.homebrew:
+    name:  m4
+    state: present
+- name: Install make
+  community.general.homebrew:
+    name: make
+    state: present
+- name: Install nano
+  community.general.homebrew:
+    name: nano
+    state: present
+- name: Install bison
+  community.general.homebrew:
+    name: bison
+    state: present
+
+
+# BSD programs that come bundled with macOS but are outdated:
+- name: Install flex
+  community.general.homebrew:
+    name: flex
+    state: present
+
+# Other preferred programs in GNU distros
+- name: install libressl
+  community.general.homebrew:
+    name: libressl
+    state: present
+- name: install file-formula
+  community.general.homebrew:
+    name: file-formula
+    state: present
+- name: install git
+  community.general.homebrew:
+    name: git
+    state: present
+- name: install openssh
+  community.general.homebrew:
+    name: openssh
+    state: present
+- name: install perl
+  community.general.homebrew:
+    name: perl
+    state: present
+- name: install python
+  community.general.homebrew:
+    name: python
+    state: present
+- name: install rsync
+  community.general.homebrew:
+    name: rsync
+    state: present
+- name: install unzip
+  community.general.homebrew:
+    name: unzip
+    state: present
+- name: install vim
+  community.general.homebrew:
+    name: vim
+    state: present
+
+
+
+- name: Install bash-completion 
+  community.general.homebrew:
+    name: bash-completion
+    state: present
+- name: Install jq
+  community.general.homebrew:
     name: jq
     state: present
+- name: Install httpie 
+  community.general.homebrew:
+    name: httpie
+    state: present
+- name: Install fzf 
+  community.general.homebrew:
+    name: fzf 
+    state: present
+- name: Install nmap 
+  community.general.homebrew:
+    name: nmap 
+    state: present
+- name: Install speedtest-cli 
+  community.general.homebrew:
+    name: speedtest-cli
+    state: present 
+- name: Install the_silver_searcher 
+  community.general.homebrew:
+    name: the_silver_searcher
+    state: present 
+- name: Install tmux 
+  community.general.homebrew:
+    name: tmux
+    state: present
+- name: Install yarn 
+  community.general.homebrew:
+    name: yarn
+    state: present 

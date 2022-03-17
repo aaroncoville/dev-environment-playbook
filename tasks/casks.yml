@@ -10,3 +10,11 @@
   community.general.homebrew_cask:
     name: notion
     state: present
+- name: Install IntelliJ 
+  community.general.homebrew_cask:
+    name: intellij-idea
+    state: present
+- name: Install Alacritty 
+  community.general.homebrew_cask:
+    name: alacritty
+    state: present
