@@ -1,0 +1,12 @@
+- name: Install 1Password
+  community.general.homebrew_cask:
+    name: 1password
+    state: present
+- name: Install Brave Browser 
+  community.general.homebrew_cask:
+    name: brave-browser
+    state: present
+- name: Install Notion 
+  community.general.homebrew_cask:
+    name: notion
+    state: present
