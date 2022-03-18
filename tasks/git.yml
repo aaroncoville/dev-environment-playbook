@@ -4,25 +4,29 @@
     scope: global
     value: "amcoville@gmail.com"
   tags:
-  - git-personal
+    - git
+    - git-personal
 - name: Git personal setup name
   git_config:
     name: user.name
     scope: global
     value: "aaroncoville"
   tags:
-  - git-personal
+    - git-personal
+    - git
 - name: SmartThings 
   git_config:
     name: user.email
     scope: global
     value: "aaron.coville@smarthings.com"
   tags:
-  - git-smartthings
+    - git-smartthings
+    - git
 - name: Git SmartThings setup name
   git_config:
     name: user.name
     scope: global
     value: "aaron.coville"
   tags:
-  - git-smartthings
+    - git-smartthings
+    - git

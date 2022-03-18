@@ -10,13 +10,10 @@
     - include_tasks: tasks/git.yml
     - include_tasks: tasks/homebrew.yml
     - include_tasks: tasks/casks.yml
-#    - include: tasks/core-setup.yml
-#    - include: tasks/node-setup.yml
-#    - include: tasks/npm-packages.yml
+    - include_tasks: tasks/node.yml
+    - include_tasks: tasks/npm-pkgs.yml
 #    - include: tasks/zsh-setup.yml
 #    - include: tasks/slack-setup.yml
-#    - include: tasks/personal-projects.yml
 #    - include: tasks/nvim-setup.yml
-#    - include: tasks/brave.yml
 #    - include: tasks/dotfiles.yml
 #    - include: tasks/productivity-tools.yml

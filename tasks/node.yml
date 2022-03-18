@@ -1,0 +1,4 @@
+- name: Install LTS node
+  shell: n lts
+  tags:
+    - node
