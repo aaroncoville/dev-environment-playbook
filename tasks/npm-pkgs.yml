@@ -6,6 +6,14 @@
   tags:
     - npm
     - eslint
+- name: Install tldr 
+  become: true
+  npm:
+    name: tldr 
+    global: yes
+  tags:
+    - npm
+    - tldr 
 - name: Install Typescript server
   become: true
   npm:
