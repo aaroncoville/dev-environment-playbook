@@ -1,20 +1,27 @@
 - name: Install 1Password
   community.general.homebrew_cask:
     name: 1password
-    state: present
 - name: Install Brave Browser 
   community.general.homebrew_cask:
     name: brave-browser
-    state: present
 - name: Install Notion 
   community.general.homebrew_cask:
     name: notion
-    state: present
 - name: Install IntelliJ 
   community.general.homebrew_cask:
     name: intellij-idea
-    state: present
 - name: Install Alacritty 
   community.general.homebrew_cask:
     name: alacritty
-    state: present
+- name: install font-hasklig
+  community.general.homebrew_cask:
+    name: font-hasklig
+- name: install keybase
+  community.general.homebrew_cask:
+    name: keybase
+- name: install setapp
+  community.general.homebrew_cask:
+    name: setapp
+- name: Upgrade all casks
+  community.general.homebrew_cask:
+    upgrade_all: true
