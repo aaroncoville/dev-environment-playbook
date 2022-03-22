@@ -231,6 +231,12 @@
   tags:
     - utils
     - bash-completion
+- name: Install fortune
+  community.general.homebrew:
+    name: fortune
+  tags:
+    - utils
+    - fzf
 - name: Install fzf 
   community.general.homebrew:
     name: fzf 
@@ -274,6 +280,12 @@
   tags:
     - utils
     - nmap
+- name: Install stow
+  community.general.homebrew:
+    name: stow
+  tags:
+    - utils
+    - stow
 - name: Install speedtest-cli 
   community.general.homebrew:
     name: speedtest-cli
