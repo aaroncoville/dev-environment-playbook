@@ -310,6 +310,12 @@
   tags:
     - utils
     - yarn
+- name: Install zsh 
+  community.general.homebrew:
+    name: zsh
+  tags:
+    - utils
+    - zsh
 - name: Update homebrew and upgrade all packages
   community.general.homebrew:
     update_homebrew: yes
