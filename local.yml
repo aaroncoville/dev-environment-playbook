@@ -9,16 +9,41 @@
     - raw: ansible-galaxy install -r requirements.yml
   tasks:
     - include_tasks: tasks/ssh.yml
+      tags:
+        - install
+        - ssh
     - include_tasks: tasks/git.yml
+      tags:
+        - install
+        - git
     - include_tasks: tasks/homebrew.yml
+      tags:
+        - install
+        - homebrew
     - include_tasks: tasks/casks.yml
+      tags:
+        - install
+        - casks
     - include_tasks: tasks/node.yml
+      tags:
+        - install
+        - node
     - include_tasks: tasks/npm-pkgs.yml
+      tags:
+        - install
+        - npm
     - include_tasks: tasks/java.yml
+      tags:
+        - install
+        - java
     - include_tasks: tasks/dotfiles.yml
+      tags:
+        - install
+        - dotfiles
     - include_tasks: tasks/softwareupdate.yml
-#    - include: tasks/zsh-setup.yml
-#    - include: tasks/slack-setup.yml
-#    - include: tasks/nvim-setup.yml
-#    - include: tasks/dotfiles.yml
-#    - include: tasks/productivity-tools.yml
+      tags:
+        - install
+    - include_tasks: tasks/zsh.yml
+      tags:
+        - zsh
+        - install
