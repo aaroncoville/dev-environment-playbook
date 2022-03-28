@@ -10,7 +10,7 @@
   copy:
     src: "{{ item }}"
     dest: "{{ homedir }}/.ssh/"
-    mode: 0600
+    mode: 0400
   with_fileglob:
     - .ssh/id_ed25519
     - .ssh/personal_ed25519
@@ -21,9 +21,10 @@
   copy:
     src: "{{ item }}" 
     dest: "{{ homedir }}/.ssh/" 
-    mode: 0644
+    mode: 0400
   with_fileglob:
-    - .ssh/*.pub
+    - .ssh/id_ed25519.pub
+    - .ssh/personal_ed25519.pub
   tags:
     - install
     - ssh
@@ -34,3 +35,11 @@
     key: "{{ lookup('file', item) }}"
   with_fileglob:
     - "{{ homedir }}/.ssh/*.pub" 
+- name: Add keys to Apple keychain
+  shell: ssh-add --apple-use-keychain {{item}}
+  with_fileglob:
+    - "{{ homedir }}/id_ed25519"
+    - "{{ homedir }}/personal_ed25519"
+  tags:
+    - install
+    - ssh
