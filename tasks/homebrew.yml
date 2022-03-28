@@ -3,330 +3,65 @@
     name: geerlingguy.mac.homebrew
   vars:
     homebrew_installed_packages:
+      - autoconf
+      - awscli
+      - bash
+      - bash-completion
+      - binutils
+      - bison
+      - coreutils
+      - diffutils
+      - ed
+      - emacs
+      - file-formula
+      - findutils
+      - flex
+      - fortune
+      - fzf
+      - gawk
+      - gimme-aws-creds
+      - git
+      - gpatch
+      - grep
+      - gnu-indent
+      - gnu-sed
+      - gnu-tar
+      - gnu-which
+      - gzip
+      - httpie
+      - jq
+      - less
+      - libressl
+      - m4
+      - make
+      - n
+      - nano
+      - neovim
+      - nmap
+      - openssh
+      - perl
+      - python
+      - rsync
+      - speedtest-cli
+      - screen
+      - stow
+      - tmux
+      - unzip
+      - vim
       - watch
+      - wdiff
+      - wget
+      - yarn
+      - zsh
     homebrew_upgrade_all_packages: true
     homebrew_cask_apps:
+      - 1password
+      - alacritty
+      - brave-browser
+      - intellij-idea
       - insomnia
+      - keybase
+      - notion
+      - setapp
     homebrew_taps:
       - homebrew/core
-  tags:
-    - homebrew
-    - install
-
-- name: Install wget
-  community.general.homebrew:
-    name: wget
-  tags:
-    - utils
-    - wget
-- name: Install wdiff
-  community.general.homebrew:
-    name: wdiff
-  tags:
-    - utils
-    - wdiff
-- name: Install autoconf
-  community.general.homebrew:
-    name: autoconf
-  tags:
-    - utils
-    - autoconf
-# GNU programs with a BSD version included with macOS
-- name: Install coreutils
-  community.general.homebrew:
-    name: coreutils
-  tags:
-    - utils
-    - coreutils
-- name: Install binutils
-  community.general.homebrew:
-    name: binutils
-  tags:
-    - utils
-    - binutils
-- name: Install diffutils
-  community.general.homebrew:
-    name: diffutils
-  tags:
-    - utils
-    - diffutils
-- name: Install ed
-  community.general.homebrew:
-    name: ed
-  tags:
-    - utils
-    - ed
-- name: Install findutils
-  community.general.homebrew:
-    name: findutils
-  tags:
-    - utils
-    - findutils
-- name: Install gawk 
-  community.general.homebrew:
-    name: gawk
-  tags:
-    - utils
-    - gawk
-- name: Install gnu-indent 
-  community.general.homebrew:
-    name: gnu-indent
-  tags:
-    - utils
-    - gnu-indent
-- name: Install gnu-sed 
-  community.general.homebrew:
-    name: gnu-sed
-  tags:
-    - utils
-    - gnu-sed
-- name: Install gnu-tar 
-  community.general.homebrew:
-    name: gnu-tar
-  tags:
-    - utils
-    - gnu-tar
-- name: Install gnu-which 
-  community.general.homebrew:
-    name: gnu-which
-  tags:
-    - utils
-    - gnu-which
-- name: Install grep 
-  community.general.homebrew:
-    name: grep
-  tags:
-    - utils
-    - grep
-- name: Install gzip 
-  community.general.homebrew:
-    name: gzip 
-  tags:
-    - utils
-    - gzip
-- name: Install screen 
-  community.general.homebrew:
-    name: screen 
-  tags:
-    - utils
-    - screen
-
-# GNU programs that come bundled with macOS but are outdated:
-- name: Install bash
-  community.general.homebrew:
-    name: bash
-  tags:
-    - utils
-    - bash
-- name: Install emacs
-  community.general.homebrew:
-    name: emacs
-  tags:
-    - utils
-    - emacs
-- name: Install gpatch
-  community.general.homebrew:
-    name: gpatch
-  tags:
-    - utils
-    - gpatch
-- name: Install less
-  community.general.homebrew:
-    name: less
-  tags:
-    - utils
-    - less
-- name: Install m4
-  community.general.homebrew:
-    name:  m4
-  tags:
-    - utils
-    - m4
-- name: Install make
-  community.general.homebrew:
-    name: make
-  tags:
-    - utils
-    - make
-- name: Install nano
-  community.general.homebrew:
-    name: nano
-  tags:
-    - utils
-    - nano
-- name: Install bison
-  community.general.homebrew:
-    name: bison
-  tags:
-    - utils
-    - bison
-
-
-# BSD programs that come bundled with macOS but are outdated:
-- name: Install flex
-  community.general.homebrew:
-    name: flex
-  tags:
-    - utils
-    - flex
-
-# Other preferred programs in GNU distros
-- name: install libressl
-  community.general.homebrew:
-    name: libressl
-  tags:
-    - utils
-    - libressl
-- name: install file-formula
-  community.general.homebrew:
-    name: file-formula
-  tags:
-    - utils
-    - file-formula
-- name: install git
-  community.general.homebrew:
-    name: git
-  tags:
-    - utils
-    - git
-- name: install openssh
-  community.general.homebrew:
-    name: openssh
-  tags:
-    - utils
-    - openssh
-- name: install perl
-  community.general.homebrew:
-    name: perl
-  tags:
-    - utils
-    - perl
-- name: install python
-  community.general.homebrew:
-    name: python
-  tags:
-    - utils
-    - python
-- name: install rsync
-  community.general.homebrew:
-    name: rsync
-  tags:
-    - utils
-    - rsync
-- name: install unzip
-  community.general.homebrew:
-    name: unzip
-  tags:
-    - utils
-    - unzip
-- name: install vim
-  community.general.homebrew:
-    name: vim
-  tags:
-    - utils
-    - vim
-
-
-- name: Install awscli
-  community.general.homebrew:
-    name: awscli
-  tags:
-    - utils
-    - awscli
-- name: Install bash-completion 
-  community.general.homebrew:
-    name: bash-completion
-  tags:
-    - utils
-    - bash-completion
-- name: Install fortune
-  community.general.homebrew:
-    name: fortune
-  tags:
-    - utils
-    - fzf
-- name: Install fzf 
-  community.general.homebrew:
-    name: fzf 
-  tags:
-    - utils
-    - fzf
-- name: Install gimme-aws-creds
-  community.general.homebrew:
-    name: gimme-aws-creds
-  tags:
-    - utils
-    - gimme-aws-creds
-- name: Install httpie  
-  community.general.homebrew:
-    name: httpie
-  tags:
-    - utils
-    - httpie
-- name: Install jq
-  community.general.homebrew:
-    name: jq
-  tags:
-    - utils
-    - jq
-- name: Install n 
-  community.general.homebrew:
-    name: n 
-  tags:
-    - utils
-    - n
-    - node
-- name: Install neovim 
-  community.general.homebrew:
-    name: neovim 
-  tags:
-    - utils
-    - neovim 
-- name: Install nmap 
-  community.general.homebrew:
-    name: nmap 
-  tags:
-    - utils
-    - nmap
-- name: Install rsync
-  community.general.homebrew:
-    name: rsync
-  tags:
-    - utils
-    - rsync
-- name: Install stow
-  community.general.homebrew:
-    name: stow
-  tags:
-    - utils
-    - stow
-- name: Install speedtest-cli 
-  community.general.homebrew:
-    name: speedtest-cli
-  tags:
-    - utils
-    - speedtest-cli
-- name: Install the_silver_searcher 
-  community.general.homebrew:
-    name: the_silver_searcher
-  tags:
-    - utils
-    - the_silver_searcher
-- name: Install tmux 
-  community.general.homebrew:
-    name: tmux
-  tags:
-    - utils
-    - tmux
-- name: Install yarn 
-  community.general.homebrew:
-    name: yarn
-  tags:
-    - utils
-    - yarn
-- name: Install zsh 
-  community.general.homebrew:
-    name: zsh
-  tags:
-    - utils
-    - zsh

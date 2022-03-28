@@ -21,10 +21,6 @@
       tags:
         - install
         - homebrew
-    - include_tasks: tasks/casks.yml
-      tags:
-        - install
-        - casks
     - include_tasks: tasks/node.yml
       tags:
         - install
