@@ -1,0 +1,40 @@
+- name: Disable press-and-hold for keys in favor of key repeat.
+  shell: defaults write -g ApplePressAndHoldEnabled -bool false
+  tags:
+    - macos
+    - install
+- name: Use AirDrop over every interface, seriously this should be the default.
+  shell: defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+  tags:
+    - macos
+    - install
+- name: Always open everything in finder's list view.
+  shell: defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+  tags:
+    - macos
+    - install
+- name: Show the ~/Library folder
+  shell: chflags nohidden ~/Library
+  tags:
+    - macos
+    - install
+- name: Set a really fast key repeat
+  shell: defaults write NSGlobalDomain KeyRepeat -int 1
+  tags:
+    - macos
+    - install
+- name: Show external hard drives on desktop when connected.
+  shell: defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+  tags:
+    - macos
+    - install
+- name: Show other removable media on desktop when connected.
+  shell: defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+  tags:
+    - macos
+    - install
+- name: Hide Safari's bookmark bar
+  shell: defaults write com.apple.Safari ShowFavoritesBar -bool false
+  tags:
+    - macos
+    - install

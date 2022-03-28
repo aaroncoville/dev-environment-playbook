@@ -51,3 +51,7 @@
       tags:
         - install
         - fonts
+    - include_tasks: tasks/macos.yml
+      tags:
+        - install
+        - macos
