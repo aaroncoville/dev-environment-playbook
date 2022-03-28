@@ -47,3 +47,7 @@
     - include_tasks: tasks/softwareupdate.yml
       tags:
         - install
+    - include_tasks: tasks/fonts.yml
+      tags:
+        - install
+        - fonts

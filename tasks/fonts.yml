@@ -1,0 +1,7 @@
+- name: Install fonts
+  synchronize:
+    src: fonts/
+    dest: "{{ lookup('env', 'HOME') }}/Library/Fonts"
+  tags:
+    - fonts
+    - install
