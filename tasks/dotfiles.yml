@@ -10,4 +10,6 @@
     - dotfiles
 - name: Stow dotfiles
   shell: cd $HOME/.dotfiles && ./macos
+  tags:
+    - dotfiles
 

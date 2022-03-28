@@ -23,3 +23,11 @@
       - candidate: java
         name: javac
         link: /usr/bin/javac
+  tags:
+    - java
+    - sdkman
+- name: Ensure SDKMAN is in PATH
+  shell: source "$HOME/.sdkman/bin/sdkman-init.sh"
+  tags:
+    - java
+    - sdkman
