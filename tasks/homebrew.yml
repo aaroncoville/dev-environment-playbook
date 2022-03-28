@@ -1,10 +1,18 @@
-# GNU programs that don't exist in MacOS:
-- name: Install watch
-  community.general.homebrew:
-    name: watch
+- name: Do all the Homebrew things
+  include_role:
+    name: geerlingguy.mac.homebrew
+  vars:
+    homebrew_installed_packages:
+      - watch
+    homebrew_upgrade_all_packages: true
+    homebrew_cask_apps:
+      - insomnia
+    homebrew_taps:
+      - homebrew/core
   tags:
-    - utils
-    - watch
+    - homebrew
+    - install
+
 - name: Install wget
   community.general.homebrew:
     name: wget
@@ -316,10 +324,3 @@
   tags:
     - utils
     - zsh
-- name: Update homebrew and upgrade all packages
-  community.general.homebrew:
-    update_homebrew: yes
-    upgrade_all: yes
-  tags:
-    - update
-    - upgrade

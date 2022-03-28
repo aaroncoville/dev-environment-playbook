@@ -7,6 +7,8 @@
       - core
   pre_tasks:
     - raw: ansible-galaxy install -r requirements.yml
+      tags:
+        - always
   tasks:
     - include_tasks: tasks/ssh.yml
       tags:
