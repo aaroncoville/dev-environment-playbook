@@ -288,6 +288,12 @@
   tags:
     - utils
     - nmap
+- name: Install rsync
+  community.general.homebrew:
+    name: rsync
+  tags:
+    - utils
+    - rsync
 - name: Install stow
   community.general.homebrew:
     name: stow
