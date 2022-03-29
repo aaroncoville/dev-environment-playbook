@@ -52,3 +52,6 @@
       tags:
         - install
         - macos
+    - include_tasks: tasks/insomnia.yml
+      tags:
+        - insomnia
