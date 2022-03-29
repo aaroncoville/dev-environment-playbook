@@ -11,6 +11,7 @@
       - bison
       - coreutils
       - diffutils
+      - docker-compose
       - ed
       - emacs
       - file-formula
@@ -58,6 +59,7 @@
       - 1password
       - alacritty
       - brave-browser
+      - docker
       - intellij-idea
       - insomnia
       - keybase
