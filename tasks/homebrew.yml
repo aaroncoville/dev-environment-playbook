@@ -40,11 +40,15 @@
       - neovim
       - nmap
       - openssh
+      - openssl
       - perl
-      - python
+      - pyenv
+      - pyenv-virtualenv
+      - readline
       - rsync
-      - speedtest-cli
       - screen
+      - speedtest-cli
+      - sqlite
       - stow
       - tmux
       - unzip
@@ -52,7 +56,9 @@
       - watch
       - wdiff
       - wget
+      - xz
       - yarn
+      - zlib
       - zsh
     homebrew_upgrade_all_packages: true
     homebrew_cask_apps:
