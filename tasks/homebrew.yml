@@ -45,6 +45,7 @@
       - pyenv
       - pyenv-virtualenv
       - readline
+      - reattach-to-user-namespace
       - rsync
       - screen
       - speedtest-cli
