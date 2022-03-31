@@ -51,6 +51,8 @@
       - speedtest-cli
       - sqlite
       - stow
+      - task
+      - taskwarrior-tui
       - tmux
       - unzip
       - vim
