@@ -1,6 +1,3 @@
-- name: Install zsh and plugins
-  include_role:
-    name: viasite-ansible.zsh
 - name: Install tmux plugin manager
   git:
     repo: 'https://github.com/tmux-plugins/tpm'
