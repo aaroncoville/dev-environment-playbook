@@ -62,6 +62,7 @@
       - xz
       - yarn
       - zlib
+      - zplug
       - zsh
     homebrew_upgrade_all_packages: true
     homebrew_cask_apps:
