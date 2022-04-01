@@ -29,16 +29,16 @@
       tags:
         - install
         - npm
-    - include_tasks: tasks/zsh.yml
-      tags:
-        - zsh
-        - install
     - include_tasks: tasks/java.yml
       tags:
         - install
         - java
     - include_tasks: tasks/dotfiles.yml
       tags:
+        - install
+    - include_tasks: tasks/zsh.yml
+      tags:
+        - zsh
         - install
         - dotfiles
     - include_tasks: tasks/softwareupdate.yml
