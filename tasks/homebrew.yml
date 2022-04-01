@@ -35,6 +35,7 @@
       - libressl
       - m4
       - make
+      - mutt
       - n
       - nano
       - neovim
