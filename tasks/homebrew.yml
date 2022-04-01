@@ -53,6 +53,7 @@
       - stow
       - task
       - taskwarrior-tui
+      - thefuck
       - tmux
       - unzip
       - vim
@@ -65,7 +66,8 @@
       - zsh
     homebrew_upgrade_all_packages: true
     homebrew_cask_apps:
-      - 1password
+      - 1password-beta
+      - 1password-cli
       - alacritty
       - brave-browser
       - docker
@@ -76,3 +78,5 @@
       - setapp
     homebrew_taps:
       - homebrew/core
+      - homebrew/cask-versions
+      - 1password/tap
