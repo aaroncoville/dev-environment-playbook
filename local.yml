@@ -55,3 +55,6 @@
     - include_tasks: tasks/insomnia.yml
       tags:
         - insomnia
+    - include_tasks: tasks/mutt.yml
+      tags:
+        - mutt
