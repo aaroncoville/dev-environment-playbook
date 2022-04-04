@@ -12,4 +12,15 @@
   shell: cd $HOME/.dotfiles && ./macos
   tags:
     - dotfiles
-
+- name: Ensure spotifyd directory exists for spotifyd.conf
+  shell: mkdir -p ~/.config/spotifyd && rm -rf ~/spotifyd-cache && mkdir ~/spotifyd-cache 
+  tags:
+    - dotfiles
+    - spotifyd
+- name: Install spotifyd.conf
+  copy:
+    src: spotifyd/spotifyd.conf
+    dest: ~/.config/spotifyd/spotifyd.conf
+  tags:
+    - dotfiles
+    - spotifyd

@@ -36,6 +36,8 @@
     - include_tasks: tasks/dotfiles.yml
       tags:
         - install
+        - dotfiles
+        - spotifyd
     - include_tasks: tasks/zsh.yml
       tags:
         - zsh

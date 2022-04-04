@@ -51,6 +51,8 @@
       - ruby
       - screen
       - speedtest-cli
+      - spotifyd
+      - spotify-tui
       - sqlite
       - stow
       - task
