@@ -58,3 +58,8 @@
     - include_tasks: tasks/mutt.yml
       tags:
         - mutt
+    - include_tasks: tasks/ruby.yml
+      tags:
+        - install
+        - ruby 
+ 

@@ -1,0 +1,13 @@
+- name: Install latest stable ruby
+  shell:
+    cmd: ruby-install ruby --no-reinstall
+  tags:
+    - ruby
+    - install
+- name: Set default ruby to the latest
+  shell:
+    cmd: source /opt/homebrew/opt/chruby/share/chruby/chruby.sh && chruby > ~/.ruby-version
+    executable: /bin/zsh
+  tags:
+    - ruby
+    - install

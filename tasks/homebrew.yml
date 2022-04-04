@@ -9,6 +9,7 @@
       - bash-completion
       - binutils
       - bison
+      - chruby
       - coreutils
       - diffutils
       - docker-compose
@@ -48,6 +49,7 @@
       - readline
       - reattach-to-user-namespace
       - rsync
+      - ruby-install
       - screen
       - speedtest-cli
       - sqlite
