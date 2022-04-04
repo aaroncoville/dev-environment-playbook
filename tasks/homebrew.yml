@@ -73,6 +73,7 @@
       - alacritty
       - brave-browser
       - docker
+      - fig
       - intellij-idea
       - insomnia
       - keybase
