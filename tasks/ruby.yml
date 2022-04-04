@@ -12,9 +12,8 @@
     - ruby
     - install
 - name: Install latest available version of colorls 
-  community.general.gem:
-    name: colorls 
-    state: latest
+  shell:
+    cmd: gem install colorls
   tags:
     - ruby
     - install
