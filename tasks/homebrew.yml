@@ -81,6 +81,7 @@
       - intellij-idea
       - insomnia
       - keybase
+      - macdown
       - notion
       - setapp
     homebrew_taps:
