@@ -1,0 +1,15 @@
+- name: Clone bashtop
+  git:
+    repo: https://github.com/aristocratos/bashtop.git
+    dest: ~/temp/bashtop
+  tags:
+    - bashtop
+- name: Build and install bashtop
+  become: true
+  shell: "cd {{ lookup('env', 'HOME') }}/temp/bashtop && sudo make install"
+  tags:
+    - bashtop
+- name: cleanup build artifacts
+  shell: rm -rf ~/temp/bashtop
+  tags:
+    - bashtop

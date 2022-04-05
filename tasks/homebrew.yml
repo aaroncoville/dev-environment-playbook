@@ -35,6 +35,7 @@
       - libressl
       - m4
       - make
+      - midnight-commander
       - mutt
       - n
       - nano
@@ -42,6 +43,7 @@
       - nmap
       - openssh
       - openssl
+      - osx-cpu-temp
       - perl
       - pyenv
       - pyenv-virtualenv

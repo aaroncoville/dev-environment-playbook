@@ -1,0 +1,6 @@
+- name: Install psutils
+  shell: python3 -m pip install psutil 
+  tags:
+    - psutils
+    - pip
+

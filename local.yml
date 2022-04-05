@@ -64,4 +64,11 @@
       tags:
         - install
         - ruby 
- 
+    - include_tasks: tasks/pip.yml
+      tags:
+        - install
+        - pip
+    - include_tasks: tasks/bashtop.yml
+      tags:
+        - install
+        - bashtop
