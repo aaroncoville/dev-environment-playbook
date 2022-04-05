@@ -61,6 +61,7 @@
       - task
       - taskwarrior-tui
       - thefuck
+      - teleport
       - tmux
       - unzip
       - vim
