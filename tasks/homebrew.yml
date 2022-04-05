@@ -49,6 +49,7 @@
       - pyenv-virtualenv
       - readline
       - reattach-to-user-namespace
+      - ripgrep
       - rsync
       - ruby
       - screen
