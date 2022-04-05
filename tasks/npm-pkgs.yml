@@ -30,6 +30,14 @@
   tags:
     - npm
     - typescript
+- name: Install prettier
+  become: true
+  npm:
+    name: prettier
+    global: yes
+  tags:
+    - npm
+    - prettier
 - name: Install TS-Node
   become: true
   npm:
