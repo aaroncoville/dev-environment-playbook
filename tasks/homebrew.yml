@@ -62,6 +62,7 @@
       - taskwarrior-tui
       - thefuck
       - teleport
+      - hashicorp/tap/terraform
       - tmux
       - unzip
       - vim
@@ -91,3 +92,4 @@
       - homebrew/core
       - homebrew/cask-versions
       - 1password/tap
+      - hashicorp/tap
