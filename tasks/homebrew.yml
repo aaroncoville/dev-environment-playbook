@@ -87,6 +87,7 @@
       - keybase
       - macdown
       - notion
+      - rider
       - setapp
     homebrew_taps:
       - homebrew/core
