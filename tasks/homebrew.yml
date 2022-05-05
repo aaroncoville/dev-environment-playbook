@@ -3,6 +3,7 @@
     name: geerlingguy.mac.homebrew
   vars:
     homebrew_installed_packages:
+      - alfred
       - autoconf
       - awscli
       - bash
