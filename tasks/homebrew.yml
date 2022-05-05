@@ -12,6 +12,7 @@
       - coreutils
       - diffutils
       - docker-compose
+      - dotnet-sdk
       - ed
       - emacs
       - file-formula
@@ -82,6 +83,7 @@
       - brave-browser
       - docker
       - fig
+      - hammerspoon
       - intellij-idea
       - insomnia
       - keybase
