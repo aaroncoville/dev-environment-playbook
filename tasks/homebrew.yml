@@ -14,7 +14,6 @@
       - docker-compose
       - dotnet-sdk
       - ed
-      - emacs
       - file-formula
       - findutils
       - flex
@@ -36,15 +35,12 @@
       - libressl
       - m4
       - make
-      - midnight-commander
-      - mutt
       - n
       - nano
       - neovim
       - nmap
       - openssh
       - openssl
-      - osx-cpu-temp
       - perl
       - pyenv
       - pyenv-virtualenv
@@ -76,18 +72,15 @@
       - zsh
     homebrew_upgrade_all_packages: true
     homebrew_cask_apps:
-      - 1password-beta
       - 1password-cli
       - alfred
       - alacritty
       - amethyst
-      - brave-browser
+      - android-studio
       - docker
       - fig
       - intellij-idea
-      - insomnia
       - keybase
-      - macdown
       - notion
       - rider
       - setapp

@@ -1,9 +1,0 @@
-# Encrypted dotfile so handled by ansible
-- name: Install muttrc dotfile 
-  copy:
-    src: ./mutt/.muttrc
-    dest: "{{ homedir }}/"
-    mode: 0400
-  tags:
-    - install
-    - mutt 

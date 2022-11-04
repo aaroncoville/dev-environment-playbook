@@ -1,4 +1,0 @@
-- name: Install Insomnia theme
-  shell: rsync -av themes/insomnia/ ~/Library/Application\ Support/Insomnia/plugins/
-  tags:
-    - insomnia
