@@ -70,7 +70,7 @@
       - yarn
       - zlib
       - zsh
-    homebrew_upgrade_all_packages: true
+    homebrew_upgrade_all_packages: "true"
     homebrew_cask_apps:
       - 1password-cli
       - alfred
