@@ -2,6 +2,7 @@
   include_role:
     name: geerlingguy.mac.homebrew
   vars:
+    homebrew_upgrade_all_packages: true
     homebrew_installed_packages:
       - autoconf
       - awscli
@@ -12,7 +13,6 @@
       - coreutils
       - diffutils
       - docker-compose
-      - dotnet-sdk
       - ed
       - file-formula
       - findutils
@@ -70,7 +70,6 @@
       - yarn
       - zlib
       - zsh
-    homebrew_upgrade_all_packages: "true"
     homebrew_cask_apps:
       - 1password-cli
       - alfred
