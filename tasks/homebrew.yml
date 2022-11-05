@@ -79,6 +79,7 @@
       - android-studio
       - docker
       - fig
+      - font-iosevka
       - intellij-idea
       - keybase
       - notion
@@ -89,3 +90,4 @@
       - homebrew/cask-versions
       - 1password/tap
       - hashicorp/tap
+      - homebrew/cask-fonts
