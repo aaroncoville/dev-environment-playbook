@@ -1,4 +1,5 @@
 - name: Install LTS node
+  become: true
   shell: n lts
   tags:
     - node
